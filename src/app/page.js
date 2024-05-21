@@ -1,6 +1,7 @@
 import Booking from '@/components/booking';
 import Header from '@/components/header';
 import Map from '@/components/map';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -9,6 +10,7 @@ export default function Home() {
 				<div className="home-page__circle circle-1"></div>
 				<div className="home-page__circle circle-2"></div>
 				<Header />
+				<Image className="home-page__gallery" src="/images/i2.jpg" width={600} height={400} />
 				<Booking />
 			</article>
 			<article className="main__hotel-info">
@@ -32,8 +34,23 @@ export default function Home() {
 			</article>
 			<article className="main__hotel-info">
 				<h1>Расположение</h1>
-				<p>2 Улица Запрудная, 603033, Нижний Новгород</p>
+				<p>2 Улица Запрудная, 603033, Нижний Новгород, Россия</p>
 				<Map />
+			</article>
+			<article className="main__hotel-info">
+				<h1>Удобства</h1>
+				<ul>
+					<li>Wi-Fi</li>
+					<li>Электрочайник</li>
+					<li>Зона для отдыха</li>
+					<li>Гладильные принадлежности</li>
+					<li>Бесплатные туалетные принадлежности</li>
+					<li>Телевизор с плоским экраном</li>
+					<li>Пол с ковровым покрытием</li>
+				</ul>
+			</article>
+			<article className="main__hotel-info">
+				<h1>Контакты</h1>
 			</article>
 		</div>
 	);
