@@ -18,8 +18,8 @@ export default function Map() {
 				src="https://yandex.ru/map-widget/v1/?ll=43.841298%2C56.291703&mode=whatshere&whatshere%5Bpoint%5D=43.841298%2C56.291703&whatshere%5Bzoom%5D=17&z=17"
 				width="100%"
 				height="500"
-				frameborder="0"
-				allowfullscreen="true"
+				frameBorder="0"
+				allowFullScreen={true}
 				loading="lazy"
 			></iframe>
 		</div>

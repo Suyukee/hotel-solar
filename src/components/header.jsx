@@ -2,11 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 export default function Header() {
-	const router = useRouter();
-	console.log(router.pathname);
 	return (
 		<header className="header">
 			<Link className="header__logo" href="/">

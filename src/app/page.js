@@ -1,7 +1,8 @@
 import Booking from '@/components/booking';
 import Header from '@/components/header';
 import Map from '@/components/map';
-import Image from 'next/image';
+import Rooms from '@/components/rooms';
+import Slider from '@/components/slider';
 
 export default function Home() {
 	return (
@@ -10,8 +11,11 @@ export default function Home() {
 				<div className="home-page__circle circle-1"></div>
 				<div className="home-page__circle circle-2"></div>
 				<Header />
-				<Image className="home-page__gallery" src="/images/i2.jpg" width={600} height={400} />
+				{/* <Slider /> */}
 				<Booking />
+			</article>
+			<article className="main__hotel-info">
+				<Rooms />
 			</article>
 			<article className="main__hotel-info">
 				<h1>Сведения об отеле</h1>
