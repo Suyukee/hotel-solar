@@ -3,49 +3,62 @@ import Header from '@/components/header';
 import Map from '@/components/map';
 import Rooms from '@/components/rooms';
 import Slider from '@/components/slider';
+import CheckMark from '@/components/svgs/check-mark';
+import Conditioner from '@/components/svgs/conditioner';
+import CreditCard from '@/components/svgs/credit-card';
 import Parking from '@/components/svgs/parking';
 import Wifi from '@/components/svgs/wifi';
 
 export default function Home() {
 	return (
 		<div className="main">
-			<article className="main__home-page">
+			<article className="main__home-page" id="home">
+				<Header />
 				<div className="home-page__circle circle-1"></div>
 				<div className="home-page__circle circle-2"></div>
-				<Header />
 				{/* <Slider /> */}
 				<Booking />
 			</article>
-			<article className="main__hotel-info">
+			<article className="main__hotel-info room-cards" id="rooms">
 				<Rooms />
 			</article>
 			<article className="main__hotel-info">
 				<h1>Сведения об отеле</h1>
 				<p>
-					Семейный 3-звездочный Hotel Solar расположен рядом с Museum of History of Development of
-					the Gorky Railroad. Отель располагает 11 кондиционируемыми номерами. Путь на авто до
-					Radiophysics Museum составит 20 минут. Менее чем в 9 км есть All Saints Church.В
-					окрестностях отеля находится Gorkovskiy Museume of Locomotives. Номера оснащены
-					отоплением, зоной отдыха и звуконепроницаемыми окнами для вашего удобства. Во всех из них
-					настелен пол с ковровым покрытием. Каждое утро в отеле предлагают континентальный
-					завтрак.Неподалеку есть станция метро "Горьковская" и железнодорожная станции Нижний
-					Новгород.
-				</p>
-				<h3>Важная информация</h3>
-				<p>
-					Регистрация заезда: с 14:00-23:59
+					Гостиница Солар расположена в городе Нижний Новгород в 11 км от центра.
 					<br />
-					Регистрация отъезда: до 12:00
+					<br />
+					Здесь созданы все условия для комфортного проживания — есть кондиционер, холодильник,
+					телевизор, фен, утюг, чай/кофе в номерах, чайник, отопление. Вы можете выбрать на Яндекс
+					Путешествиях любой из 11 доступных сейчас номеров. Уборка — каждый день.
+					<br />
+					<br />
+					В гостинице есть ресторан, бар, конференц-зал.
+					<br />
+					<br />
+					У каждого гостя будет доступ в интернет, вы сможете выложить фотографии, отправить файл
+					или позвонить родным по видео.
+					<br />
+					<br />
+					Учитывайте время заселения в гостиницу. Заезд здесь начинается с 14:00, выехать нужно до
+					12:00. Даже если вы прибудете поздно ночью, вас встретят на круглосуточной стойке
+					регистрации и помогут с размещением.
+					<br />
+					<br />
+					Если вы на машине, можете оставить её на парковке.
+					<br />
+					<br />К вашим услугам: обслуживание номеров, консьерж-сервис, камера хранения, ускоренная
+					регистрация заезда/отъезда.
 				</p>
 			</article>
-			<article className="main__hotel-info">
+			<article className="main__hotel-info" id="location">
 				<h1>Расположение</h1>
 				<p>2 Улица Запрудная, 603033, Нижний Новгород, Россия</p>
 				<Map />
 			</article>
-			<article className="main__hotel-info">
+			<article className="main__hotel-info" id="comforts">
 				<h1>Удобства</h1>
-				<ul>
+				<ul className="hotel-info__icon-comforts">
 					<li>
 						<Wifi />
 						Wi-Fi
@@ -54,14 +67,54 @@ export default function Home() {
 						<Parking />
 						Парковка
 					</li>
-					<li>Зона для отдыха</li>
-					<li>Гладильные принадлежности</li>
-					<li>Бесплатные туалетные принадлежности</li>
-					<li>Телевизор с плоским экраном</li>
-					<li>Пол с ковровым покрытием</li>
+					<li>
+						<Conditioner />
+						Кондиционер в номере
+					</li>
+					<li>
+						<CreditCard />
+						Оплата картой
+					</li>
+				</ul>
+				<ul className="hotel-info__comforts">
+					<h4>
+						<CheckMark />
+						Интернет
+					</h4>
+					<li>Интернет в гостинице: бесплатный</li>
+					<li>Доступ в интернет: в номерах</li>
+					<li>Доступ в интернет: на всей территории отеля</li>
+				</ul>
+				<ul className="hotel-info__comforts">
+					<h4>
+						<CheckMark />
+						Услуги и удобства
+					</h4>
+					<li>Частота уборки: ежедневно</li>
+					<li>Ускоренная регистрация заезда/отъезда</li>
+					<li>Трансфер: до/от аэропорта</li>
+					<li>Консьерж-сервис</li>
+					<li>Возможно проживание с животными</li>
+					<li>Круглосуточная стойка регистрации</li>
+					<li>Камера хранения</li>
+				</ul>
+				<ul className="hotel-info__comforts">
+					<h4>
+						<CheckMark />
+						Удобства в номерах
+					</h4>
+					<li>Телевизор в номере</li>
+					<li>Чай/кофе в номерах</li>
+					<li>Номера со звукоизоляцией</li>
+					<li>Уборка</li>
+					<li>Тапочки</li>
+					<li>Утюг</li>
+					<li>Номера для некурящих</li>
+					<li>Холодильник</li>
+					<li>Фен</li>
 				</ul>
 			</article>
-			<article className="main__hotel-info">
+			<article className="main__hotel-info" id="contacts">
 				<h1>Контакты</h1>
 			</article>
 		</div>

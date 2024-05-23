@@ -8,26 +8,35 @@ export default function Rooms() {
 			image: '/images/room-1.webp',
 		},
 		{
-			name: 'Cтандарт с 1 кроватью',
-			image: '/images/room-1.webp',
+			name: 'Улучшенный с 1 кроватью',
+			image: '/images/room-2.webp',
 		},
 		{
-			name: 'Cтандарт с 1 кроватью',
-			image: '/images/room-1.webp',
+			name: 'Комфорт с 2 кроватями',
+			image: '/images/room-3.webp',
 		},
 		{
-			name: 'Cтандарт с 1 кроватью',
-			image: '/images/room-1.webp',
+			name: 'Комфорт с 1 кроватью',
+			image: '/images/room-4.webp',
+		},
+		{
+			name: '4-местный стандарт',
+			image: '/images/room-5.webp',
 		},
 	];
 	return (
-		<Link className="rooms" href="https://travel.yandex.ru/hotels/nizhny-novgorod/solar/">
+		<div className="rooms">
 			{rooms.map((room) => (
-				<div className="rooms__room-card">
-					<Image src={room.image} alt="" width={300} height={300} />
-					<p>{room.name}</p>
-				</div>
+				<Link
+					className="rooms__room-card"
+					href="https://travel.yandex.ru/hotels/nizhny-novgorod/solar/"
+				>
+					<Image src={room.image} alt="" width={250} height={250} />
+					<div className="room-card__room-class">
+						<p>{room.name}</p>
+					</div>
+				</Link>
 			))}
-		</Link>
+		</div>
 	);
 }
