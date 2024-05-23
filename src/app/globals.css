@@ -86,33 +86,29 @@ a {
 
 /*slider*/
 .home-page__gallery {
-	display: flex;
-	gap: 30px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 33% 34% 33%;
+	align-items: center;
+	margin: 0 auto;
 	z-index: 2;
 }
 
-.home-page__gallery h2 {
-	color: #bbb;
+.gallery__photo {
+	display: flex;
+	justify-content: center;
+	z-index: 2;
 }
 
-/* .home-page__photo {
+.home-page__photo {
+	width: auto;
+	height: auto;
+	gap: 15px;
 	border-radius: 15px;
-	transition: transform 10s ease;
-	animation: move 10s infinite linear;
+	box-shadow: 10px 10px #543fc4;
 }
 
-@keyframes move {
-	0% {
-		transform: translateX(-100%);
-	}
-	50% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(100%);
-	}
-} */
-
+/* Booking */
 .home-page__booking {
 	display: flex;
 	align-items: flex-end;
@@ -330,9 +326,13 @@ a {
 	.header__nav {
 		gap: 15px;
 	}
-	.home-page__gallery {
+	.home-page__photo {
 		width: 450px;
 		height: 300px;
+	}
+	.photo__rating {
+		width: 250px;
+		height: 250px;
 	}
 	.booking__card {
 		padding: 10px 15px;

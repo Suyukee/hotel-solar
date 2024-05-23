@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Slider() {
 	const images = [
@@ -11,19 +14,37 @@ export default function Slider() {
 		'/images/i7.jpg',
 		'/images/i8.jpg',
 	];
+
+	const [imgNum, setImgNum] = useState(0);
+
+	useEffect(() => {
+		setInterval(() => {
+			if (imgNum !== images[6]) {
+				setImgNum(imgNum + 1);
+			}
+		}, 3000);
+	}, [imgNum]);
+
 	return (
 		<div className="home-page__gallery">
-			{/* {images.map((i, index) => (
+			<div></div>
+			<div className="gallery__photo">
 				<Image
-					className={`home-page__photo photo-${i}`}
-					src={i}
+					className={'home-page__photo'}
+					src={images[imgNum]}
 					width={600}
 					height={400}
-					key={index}
 					alt="Отель Солар"
 				/>
-			))} */}
-			<h2>*Здесь что-то будет*</h2>
+			</div>
+
+			<Image
+				className="photo__rating"
+				src="/images/rating.png"
+				width={320}
+				height={340}
+				alt="Рейтинг 4.4"
+			/>
 		</div>
 	);
 }
