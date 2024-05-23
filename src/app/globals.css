@@ -85,14 +85,18 @@ a {
 }
 
 /*slider*/
-/* .home-page__gallery {
+.home-page__gallery {
 	display: flex;
 	gap: 30px;
+	z-index: 2;
 }
 
-.home-page__photo {
+.home-page__gallery h2 {
+	color: #bbb;
+}
+
+/* .home-page__photo {
 	border-radius: 15px;
-	z-index: 2;
 	transition: transform 10s ease;
 	animation: move 10s infinite linear;
 }

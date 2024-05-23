@@ -16,7 +16,7 @@ export default function Home() {
 				<Header />
 				<div className="home-page__circle circle-1"></div>
 				<div className="home-page__circle circle-2"></div>
-				{/* <Slider /> */}
+				<Slider />
 				<Booking />
 			</article>
 			<article className="main__hotel-info room-cards" id="rooms">
@@ -116,6 +116,7 @@ export default function Home() {
 			</article>
 			<article className="main__hotel-info" id="contacts">
 				<h1>Контакты</h1>
+				<h3>*Отрыть контакты*</h3>
 			</article>
 		</div>
 	);

@@ -13,7 +13,7 @@ export default function Slider() {
 	];
 	return (
 		<div className="home-page__gallery">
-			{images.map((i, index) => (
+			{/* {images.map((i, index) => (
 				<Image
 					className={`home-page__photo photo-${i}`}
 					src={i}
@@ -22,7 +22,8 @@ export default function Slider() {
 					key={index}
 					alt="Отель Солар"
 				/>
-			))}
+			))} */}
+			<h2>*Здесь что-то будет*</h2>
 		</div>
 	);
 }
