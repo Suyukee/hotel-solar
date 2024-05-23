@@ -3,6 +3,8 @@ import Header from '@/components/header';
 import Map from '@/components/map';
 import Rooms from '@/components/rooms';
 import Slider from '@/components/slider';
+import Parking from '@/components/svgs/parking';
+import Wifi from '@/components/svgs/wifi';
 
 export default function Home() {
 	return (
@@ -44,8 +46,14 @@ export default function Home() {
 			<article className="main__hotel-info">
 				<h1>Удобства</h1>
 				<ul>
-					<li>Wi-Fi</li>
-					<li>Электрочайник</li>
+					<li>
+						<Wifi />
+						Wi-Fi
+					</li>
+					<li>
+						<Parking />
+						Парковка
+					</li>
 					<li>Зона для отдыха</li>
 					<li>Гладильные принадлежности</li>
 					<li>Бесплатные туалетные принадлежности</li>

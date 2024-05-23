@@ -178,6 +178,20 @@ a {
 	text-align: justify;
 }
 
+.main__hotel-info ul {
+	list-style: none;
+}
+
+.main__hotel-info li {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.main__hotel-info svg {
+	width: 26px;
+}
+
 /* Rooms */
 .rooms {
 	display: flex;
