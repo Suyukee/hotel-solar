@@ -12,9 +12,7 @@ export default function Header() {
 	};
 	return (
 		<header className="header">
-			<Link className="header__logo" href="/">
-				<Image src="/images/logo.png" alt="Hotel Solar" width={100} height={50} />
-			</Link>
+			<Image src="/images/logo.png" alt="Hotel Solar" width={100} height={50} />
 			<nav className="header__nav">
 				<Link className="nav__link" href="#rooms">
 					Номера

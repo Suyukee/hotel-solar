@@ -30,6 +30,10 @@ a {
 	gap: 300px;
 }
 
+.header img {
+	z-index: 2;
+}
+
 .header__nav {
 	display: flex;
 	justify-content: center;
@@ -78,10 +82,6 @@ a {
 	z-index: 0;
 	overflow: hidden;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.home-page img {
-	z-index: 2;
 }
 
 /*slider*/
