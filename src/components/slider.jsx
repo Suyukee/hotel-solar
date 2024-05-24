@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Slider() {
 	const images = [
@@ -19,7 +19,7 @@ export default function Slider() {
 
 	useEffect(() => {
 		setInterval(() => {
-			if (imgNum !== images[6]) {
+			if (imgNum !== 7) {
 				setImgNum(imgNum + 1);
 			}
 		}, 3000);
@@ -30,7 +30,7 @@ export default function Slider() {
 			<div></div>
 			<div className="gallery__photo">
 				<Image
-					className={'home-page__photo'}
+					className="home-page__photo"
 					src={images[imgNum]}
 					width={600}
 					height={400}
@@ -38,13 +38,15 @@ export default function Slider() {
 				/>
 			</div>
 
-			<Image
-				className="photo__rating"
-				src="/images/rating.png"
-				width={320}
-				height={340}
-				alt="Рейтинг 4.4"
-			/>
+			<div className="gallery__rating">
+				<Image
+					className="photo__rating"
+					src="/images/rating.png"
+					width={320}
+					height={340}
+					alt="Рейтинг 4.4"
+				/>
+			</div>
 		</div>
 	);
 }

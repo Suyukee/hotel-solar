@@ -100,6 +100,12 @@ a {
 	z-index: 2;
 }
 
+.gallery__rating {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
 .home-page__photo {
 	width: auto;
 	height: auto;
@@ -326,13 +332,19 @@ a {
 	.header__nav {
 		gap: 15px;
 	}
+	.home-page__gallery {
+		grid-template-columns: 0% 50% 50%;
+	}
 	.home-page__photo {
 		width: 450px;
 		height: 300px;
 	}
+	.gallery__rating {
+		justify-content: center;
+	}
 	.photo__rating {
 		width: 250px;
-		height: 250px;
+		height: 280px;
 	}
 	.booking__card {
 		padding: 10px 15px;
@@ -372,7 +384,17 @@ a {
 	}
 	.home-page__gallery {
 		width: 95%;
-		height: auto;
+		height: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0% 50% 50%;
+	}
+	.home-page__photo {
+		width: 300px;
+		height: 200px;
+	}
+	.photo__rating {
+		width: 180px;
+		height: 200px;
 	}
 	.home-page__booking {
 		margin-bottom: 10px;
