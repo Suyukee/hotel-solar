@@ -116,7 +116,14 @@ export default function Home() {
 			</article>
 			<article className="main__hotel-info" id="contacts">
 				<h1>Контакты</h1>
-				<h3>*Отрыть контакты*</h3>
+				<a href="tel:79200590080">+7 (920) 059-00-80</a>
+				<a href="tel:78312170080">+7 (831) 217-00-80</a>
+				<a className="hotel-info__wa-link" href="https://wa.me/79200590080">
+					WhatsApp
+				</a>
+				<a className="hotel-info__viber-link" href="viber://chat?number=%2B79200590080">
+					Viber
+				</a>
 			</article>
 		</div>
 	);
