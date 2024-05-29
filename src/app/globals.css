@@ -378,6 +378,12 @@ a {
 	}
 }
 
+@media (max-height: 1100px) {
+	.main__home-page {
+		height: 90vh;
+	}
+}
+
 @media (max-width: 810px) {
 	.header {
 		width: 100%;

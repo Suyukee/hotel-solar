@@ -8,6 +8,7 @@ import Conditioner from '@/components/svgs/conditioner';
 import CreditCard from '@/components/svgs/credit-card';
 import Parking from '@/components/svgs/parking';
 import Wifi from '@/components/svgs/wifi';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -17,10 +18,21 @@ export default function Home() {
 				<div className="home-page__circle circle-1"></div>
 				<div className="home-page__circle circle-2"></div>
 				<Slider />
-				<Booking />
+				<div className="home-page__booking">
+					<div className="booking__card">
+						<p>Забронировать через Яндекс Путешествия</p>
+						<Link
+							className="booking__btn"
+							href="https://travel.yandex.ru/hotels/nizhny-novgorod/solar/"
+						>
+							Перейти
+						</Link>
+					</div>
+				</div>
 			</article>
 			<article className="main__hotel-info room-cards" id="rooms">
 				<Rooms />
+				<Booking />
 			</article>
 			<article className="main__hotel-info">
 				<h1>Сведения об отеле</h1>
