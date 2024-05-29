@@ -384,6 +384,16 @@ a {
 	}
 }
 
+@media (max-width: 2000px) {
+	.home-page__gallery {
+		grid-template-columns: 0% 50% 50%;
+		width: 70vw;
+	}
+	.gallery__rating {
+		justify-content: center;
+	}
+}
+
 @media (max-width: 810px) {
 	.header {
 		width: 100%;

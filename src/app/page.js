@@ -1,4 +1,3 @@
-import Booking from '@/components/booking';
 import Header from '@/components/header';
 import Map from '@/components/map';
 import Rooms from '@/components/rooms';
@@ -32,7 +31,6 @@ export default function Home() {
 			</article>
 			<article className="main__hotel-info room-cards" id="rooms">
 				<Rooms />
-				<Booking />
 			</article>
 			<article className="main__hotel-info">
 				<h1>Сведения об отеле</h1>
