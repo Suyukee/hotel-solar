@@ -16,5 +16,4 @@
 
 ## Примеры
 ![изображение](https://github.com/Suyukee/hotel-solar/assets/39066019/4ae3cac3-8a25-4c8a-8a44-94e455895c61)
-![изображение](https://github.com/Suyukee/hotel-solar/assets/39066019/b04dc0b5-76d7-4e80-a3d2-5083878d9a1f)
 
